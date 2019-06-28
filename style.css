@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  max-width: 900px;
+}
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+#options {
+  margin-left: 10px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  padding: 8px 20px;
+  width: 80%;
+  display: inline-block;
+  cursor: pointer;
+}
+ol li span:first-child {
+  color: white;
+  background-color: rgb(0, 162, 255);
+  padding: 8px 16px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+ol li {
+  font-size: 1.1em;
+  padding: 5px 0;
+}
+
+#submit,
+#next {
+  visibility: hidden;
+}
+#btns {
+  width: 88%;
+}
+#footer {
+  opacity: 0.6;
+}
+.listClicked {
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
+
+#checkResults {
+  display: none;
+}
+
+#modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+#modal-content {
+  background-color: white;
+}
+#modal-content h4 {
+  margin-top: 20px;
+}
+@media screen and (max-width: 720px) {
+  body {
+    display: block;
+  }
+}
