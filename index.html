@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz App</title>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!--Adding css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Adding javascript -->
+    <script src="quiz.js"></script>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div
+      id="container"
+      class="shadow-lg px-5 py-4 rounded-lg animated slideInRight"
+    >
+      <!--Header-->
+      <header class="mb-4"><h1 class="text-center">QUIZ</h1></header>
+      <!--Question-->
+      <h4>
+        Q :
+        <span id="ques">Connecting to the server...</span>
+      </h4>
+      <!--Answers-->
+      <ol class="mt-5 mb-5">
+        <li class="mb-3">
+          <span>1</span>
+          <div id="options">Connecting to the server...</div>
+        </li>
+        <li class="mb-3">
+          <span>2</span>
+          <div id="options">Connecting to the server...</div>
+        </li>
+        <li class="mb-3">
+          <span>3</span>
+          <div id="options">Connecting to the server...</div>
+        </li>
+        <li class="mb-3">
+          <span>4</span>
+          <div id="options">Connecting to the server...</div>
+        </li>
+      </ol>
+      <!--Buttons-->
+      <div id="btns" class="d-flex justify-content-around">
+        <button class="btn btn-outline-primary flex-fill mr-5" id="submit">
+          Submit
+        </button>
+        <button class="btn btn-outline-primary flex-fill" id="next">
+          Next
+        </button>
+        <button id="checkResults" class="btn btn-outline-primary flex-fill">
+          Check Results
+        </button>
+      </div>
+
+      <div class="mt-4" id="footer">
+        Question <span id="quesNum">1</span> of 10
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div id="modal" class="justify-content-center align-items-center">
+      <div id="modal-content" class="px-5 py-4 rounded-lg animated zoomIn">
+        <h2 class="text-center">Results</h2>
+        <h4>Total Questions : 10</h4>
+        <h4>Correct Answers : <span class="marks">7</span></h4>
+        <h4>Your Marks : <span class="marks">7</span> / 10</h4>
+        <p class="mt-4">Refresh the page to start again.</p>
+      </div>
+    </div>
+  </body>
+</html>
